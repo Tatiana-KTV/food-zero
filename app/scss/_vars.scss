@@ -6,4 +6,34 @@ $black: #000000;
 $dark-grey: #4D4D4D;
 $light-grey: #B0B0B0;
 $white: #FFFFFF;
+//  --second-family: "Rufina"
+%lato-700 {
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+}
 
+%lato-700italic {
+  font-family: 'Lato-BoldItalic';
+  font-weight: 700;
+}
+
+%lato-400 {
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+}
+
+%rufina-700 {
+  font-family: 'Rufina-Bold';
+  font-weight: 700;
+}
+
+%rufina-400 {
+  font-family: 'Rufina-Regular';
+  font-weight: 400;
+}
+
+%inter-400 {
+  font-family: 'Inter';
+  font-weight: 400;
+}
+ 

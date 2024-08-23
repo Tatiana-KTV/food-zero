@@ -1,5 +1,103 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'mixin';
 @import 'global';
+
+.header-bg {
+  background-color: $dark-green;
+}
+
+.menu {
+  display: none;
+  &--active {
+    display: block;
+  }
+}
+
+.burger {
+  width: 46px;
+  height: 30px;
+  position: relative;
+  color: #ffffff;
+  cursor: pointer;
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    top: calc(100% - 2px);
+  }
+  // &--active .burger__line {
+  //   transform: scale(0);
+  //   transition: transform 0.3s ease-in-out;
+  // }
+  // &--active::before {
+  //   transform: rotate(45deg);
+  //   top: 50%;
+  //   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  // }
+  // &--active::after {
+  //   transform: rotate(-45deg);
+  //   top: 50%;
+  //   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  // }
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 46px 0;
+  &__left,
+  &__right {
+    align-items: center;
+  }
+  &__logo-img {
+    width: 307px;
+    height: 115px;
+    margin-right: 45px;
+  }
+  &__call {
+    font-size: 26px;
+    @extend %inter-400;
+    color: $white;
+    margin-right: 25px;
+  }
+  &__reservation {
+    font-size: 32px;
+    line-height: 1.5;
+    color: $white;
+    border: 2px solid $white;
+    padding: 20px 46px;
+    @extend %rufina-700;
+  }
+}
+
+
+
+
+
+
+
+
+
 
