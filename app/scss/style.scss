@@ -3,3 +3,12 @@
 @import 'reset';
 @import 'global';
 
+h1 {
+  @extend %lato-700;
+}
+h2 {
+  @extend %lato-400;
+}
+h3 {
+  @extend %rufina-700;
+}
