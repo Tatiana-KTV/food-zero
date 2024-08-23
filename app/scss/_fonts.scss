@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: 'Lato-BoldItalic';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../fonts/Lato-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Lato-BoldItalic.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Lato-Regular';
   font-weight: 400;
   font-style: normal;
@@ -17,10 +26,28 @@
 }
 
 @font-face {
+  font-family: 'Rufina-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Rufina-Regular.woff2') format('woff2'),
+       url('../fonts/Rufina-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Rufina-Bold';
   font-weight: 700;
   font-style: normal;
   src: url('../fonts/Rufina-Bold.woff2') format('woff2'),
-       url('../fonts/Rufina-Bold.woff2') format('woff2');
+    url('../fonts/Rufina-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Inter-VariableFont_opsz,wght.woff2') format('woff2'),
+    url('../fonts/Inter-VariableFont_opsz,wght.woff2') format('woff2');
   font-display: swap;
 }
