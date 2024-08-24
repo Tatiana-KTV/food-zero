@@ -21,6 +21,10 @@
   position: relative;
   color: #ffffff;
   cursor: pointer;
+  @include mq('tablet') {
+    width: 36px;
+    height: 20px;
+  }
   &__line {
     position: absolute;
     left: 0;
@@ -67,21 +71,75 @@
   justify-content: space-between;
   align-items: center;
   padding: 46px 0;
+  @include mq('desktop') {
+    padding: 40px 0;
+  }
+  @include mq('desktop-2') {
+    padding: 35px 0;
+  }
+  @include mq('tablet-2') {
+    padding: 30px 0;
+  }
+  @include mq('tablet') {
+    padding: 25px 0;    
+  }
+  @include mq('phone') {
+    padding: 20px 0;
+  }
+
   &__left,
   &__right {
     align-items: center;
   }
+&__left {
+  @include mq('phone') {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
   &__logo-img {
     width: 307px;
     height: 115px;
     margin-right: 45px;
+    @include mq('desktop-2') {
+      margin-right: 40px;
+    }
+    @include mq('desktop') {
+      margin-right: 35px;
+      width: 245px;
+      height: 92px;
+    }
+      @include mq('tablet-2') {
+        margin-right: 30px;
+        width: 196px;
+        height: 73px;
+      }
+
+      @include mq('tablet') {
+     
+      }
+
+      @include mq('phone') {
+       
+      }
   }
   &__call {
     font-size: 26px;
     @extend %inter-400;
     color: $white;
     margin-right: 25px;
+    @include mq('desktop-2') {
+      font-size: 24px;
+    }
+    @include mq('desktop'){
+      font-size: 22px;
+      margin-right: 20px;
+    }
+    @include mq('tablet-2') {
+      display: none;
+    }
   }
+
   &__reservation {
     font-size: 32px;
     line-height: 1.5;
@@ -89,11 +147,56 @@
     border: 2px solid $white;
     padding: 20px 46px;
     @extend %rufina-700;
+      @include mq('desktop-2') {
+        font-size: 30px;
+        padding: 18px 42px;
+      }
+      @include mq('desktop') {
+        font-size: 28px;
+        padding: 14px 38px;
+      }
+      @include mq('tablet-2') {
+        font-size: 26px;
+        padding: 10px 34px;
+      }
+      @include mq('tablet') {
+        font-size: 20px;
+        padding: 8px 24px;
+      }
+
+      @include mq('phone') {
+        display: none;
+      }
   }
 }
 
 
-
+.hero {
+  padding: 100px 0 220px;
+  background-color: $dark-green;
+  &__top-content {
+    justify-content: space-between;
+  }
+  &__title {
+    font-size: 148px;
+    line-height: 1.03;
+    color: $white;
+    @extend %rufina-700;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+  }
+  &__subtitle {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: $white;
+    @extend %lato-400;
+    width: 50%;
+  }
+  &_top-image {
+    height: 931px;
+  }
+}
 
 
 
