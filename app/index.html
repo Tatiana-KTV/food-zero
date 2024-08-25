@@ -232,7 +232,50 @@
       </div>
     </section>
 
+    <section class="reservation-form">
+      <div class="container">
+        <h3 class="reservation-form__title">Make a Reservation</h3>
+        <span class="reservation-form__subtitle">Get in touch with restaurant</span>
+
+        <form class="reservation-form__client-form d-flex">
+          <div class="reservation-form__client-data d-flex">
+
+            <label class="reservation-form__label " for="myDate">
+              <input class="reservation-form__input reservation-form__select-style" type="date" id="myDate"
+                name="reservation-date" min="myDate" max="2025-12-31" required />
+            </label>
+
+            <label class="reservation-form__label" for="time">
+              <select class="reservation-form__input reservation-form__select-style" name="time" id="time" required>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+                <option value="22:00">22:00</option>
+              </select>
+            </label>
+
+            <label class="reservation-form__label" for="clients">
+              <select class="reservation-form__input reservation-form__select-style" name="clients-number" id="clients"
+                required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </label>
+          </div>
+
+          <button class="reservation-form__btn" type="submit">Book Now</button>
+        </form>
+      </div>
+    </section>
+
   </main>
+
+
+
+
 
   <footer class="footer"></footer>
 
