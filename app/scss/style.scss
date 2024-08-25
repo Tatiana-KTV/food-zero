@@ -464,19 +464,22 @@
 
 .features {
   padding: 200px 0;
-&__img {
-  background-color: $light-green;
-  margin: 0 auto 40px;
-  border-radius: 50%;
-  width: 260px;
-  height: 260px;
-  align-items: center;
-  justify-content: center;
-}
-&__icon {
-width: 184px;
-height: 184px;
-}
+
+  &__img {
+    background-color: $light-green;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 184px;
+    height: 184px;
+  }
+
   &__item-title {
     @extend %rufina-700;
     font-size: 48px;
@@ -491,5 +494,85 @@ height: 184px;
     letter-spacing: 0.02em;
     text-align: center;
     color: $dark-grey;
+  }
+}
+
+.recent-posts {
+  padding: 130px 0 105px;
+
+  &__img {
+    max-width: 792px;
+    width: 100%;
+    height: 792px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  &__content {
+    padding: 70px;
+  }
+
+  &__meta-data {
+    align-items: center;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: $med-green;
+    margin-bottom: 50px;
+  }
+
+  &__author {
+    align-items: center;
+    margin-right: 35px;
+  }
+
+  &__author-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  &__author-name {
+    display: block;
+  }
+
+  &__data,
+  &__time {
+    display: block;
+    margin-right: 35px;
+  }
+
+  &__title {
+    @extend %rufina-700;
+    font-size: 48px;
+    line-height: 1.33;
+    border-bottom: 1px dotted $black;
+    margin-bottom: 50px;
+  }
+
+  &__txt {
+    @extend %lato-700;
+    line-height: 1.40;
+    letter-spacing: 0.02em;
+    color: $dark-grey;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 48px;
+    height: 28px;
+    margin-left: 15px;
+    path {
+      fill: $dark-green;
+    }
+    
   }
 }
