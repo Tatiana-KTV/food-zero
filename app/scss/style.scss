@@ -732,7 +732,7 @@
     font-size: 108px;
     line-height: 1.11;
     text-align: center;
-    width: 50%;
+    width: 60%;
     margin: 0 auto 20px;
   }
 
@@ -810,6 +810,10 @@
       width: 48px;
       height: 28px;
       fill: $dark-green;
+      transition: fill 0.3s;
+      &:hover {
+        fill: $green;
+      }
     }
   }
 }
@@ -826,6 +830,7 @@
     height: 170px;
     border-radius: 50%;
     object-fit: contain;
+    margin-right: 60px;
   }
   &__name {
     @extend %rufina-700;
@@ -836,5 +841,40 @@
   &__prof {
     font-size: 18px;
     letter-spacing: 0.02em;
+  }
+}
+
+.footer {
+  background-color: $dark-green;
+  &__top {
+    border-bottom: 1px dotted $white;
+    padding: 130px 0;
+  }
+  &__top-img {
+    width: 160px;
+    height: 140px;
+  }
+  &__bottom {
+    padding: 50px 0 70px;
+    justify-content: space-between;
+  }
+
+  &__bottom-info {
+    display: block;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: $white;
+  }
+
+ &__icon {
+    width: 28px;
+    height: 28px;
+    fill: $white;
+    margin: 15px;
+    transition: fill 0.3s;
+    &:hover {
+      fill: $green;
+    }
   }
 }
